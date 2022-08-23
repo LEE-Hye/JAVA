@@ -7,6 +7,10 @@ public class ex01 {
 		// --> 사용자가 입력한 내용을 출력시키는 명령어
 		System.out.println("JAVA");
 		System.out.println("DB");
+		//숫자 10을 출력 시키고 싶습니다!
+		//문자열 + 숫자 => 붙여져서 출력 되어진다!
+		// 문자열 + 문자열 => 붙여져서 출력 되어진다!
+		System.out.println("10" + "3");
 
 	}
 
