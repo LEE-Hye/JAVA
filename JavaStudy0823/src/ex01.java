@@ -11,7 +11,9 @@ public class ex01 {
 		//문자열 + 숫자 => 붙여져서 출력 되어진다!
 		// 문자열 + 문자열 => 붙여져서 출력 되어진다!
 		System.out.println("10" + "3");
-
+		
+		System.out.println(10+3+"2");
+		System.out.println("2"+3+10);
 	}
 
 }
