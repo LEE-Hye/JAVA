@@ -21,9 +21,27 @@ public class ex02 {
 		// 2. 키워드 사용 불가
 		// 3. 띄어쓰기 불가
 		// 4. 숫자로 시작 불가
+		// 5. 같은 변수명은 한 번만 선언할 수 있음
+		int data = 10; // data 30을 담고 싶으면
+		// data = 30; // 이라 적어줘야 함
 		
-		char c1 = 98;
+		char c1 = 65; // 아스키 코드
 		System.out.println(c1);
+		
+		long num = 999999999;
+		
+		// 소수 값을 저장할 수 있는 키워드 : float, double
+		int num4 = 30;
+		float num2 = 10.5f;
+		System.out.println(num2);
+		// 데이터 연산을 했을 때 --> 더 큰 자료형 타입으로 형변환 된다.
+		System.out.println(num2+num4);
+		
+		double num3 = 10.5;
+		System.out.println(num3);
+	
+		
+		int myNum = 50;
 	}
 
 }
