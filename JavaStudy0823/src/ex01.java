@@ -3,6 +3,7 @@ public class ex01 {
 
 	public static void main(String[] args) {
 		// 설명달기! -> 주석달기!
+		// ctrl + f11 -> 실행
 		// System.out.println("내용")
 		// --> 사용자가 입력한 내용을 출력시키는 명령어
 		System.out.println("JAVA");
@@ -18,6 +19,8 @@ public class ex01 {
 		
 		//syso + Ctrl + Space -> 자동완성
 		System.out.println();
+	
+		System.out.println(5>2);
 	}
 
 }
