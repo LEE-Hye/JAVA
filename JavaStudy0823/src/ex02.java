@@ -21,6 +21,9 @@ public class ex02 {
 		// 2. 키워드 사용 불가
 		// 3. 띄어쓰기 불가
 		// 4. 숫자로 시작 불가
+		
+		char c1 = 98;
+		System.out.println(c1);
 	}
 
 }
