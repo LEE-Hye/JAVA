@@ -19,6 +19,7 @@ public class ex03 {
 		// 나눈 몫 결과
 		// 나머지 결과
 		// (변형시킬 자료형) 변수명 --> 변수를 강제로 형변환시키겠습니다.
+		// 연산 결과는 더 큰 타입으로 도출된다!
 		System.out.println("나눈 몫 결과 : " + ((float)num1/num2));
 		System.out.println("나머지 결과 : " + (num1%num2));
 		
