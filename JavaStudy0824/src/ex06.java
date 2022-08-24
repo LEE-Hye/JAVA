@@ -16,9 +16,12 @@ public class ex06 {
 		
 			Scanner sc = new Scanner(System.in);
 			
-			System.out.print("나이를 입력해주시겠습니까? : ");
+			System.out.print("나이를 입력해 주시겠습니까? : ");
 			int age = sc.nextInt();
 			
+			// 크거나 같다면 >=
+			// 작거나 같다면 <=
+			// if 문에서 { }가 없다면 다음으로 오늘 명령문 한 줄만 인식 함
 			if(age >= 20) {
 				System.out.println("성인입니다.");
 			}
