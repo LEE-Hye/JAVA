@@ -1,5 +1,9 @@
 ------------------------------이클립스 설치-------------------------------------
-1. JDK 1.8 검색 후 설치
-2. eclipse 21년 9월 버전 설치
+1. JDK 1.8 검색 -> 첫번째 것 접속 -> Java SE Development Kit 8u202 -> window x64 다운로드
+2. eclipse 검색 -> 첫번째 것 접속 -> Download Package -> 21년 9월 버전 -> Eclipse IDE for Enterprise Java and Web Developers 다운로드
 --------------------------------------------------------------------------
-8월 23일 2시쯤 수업 듣고 jdk 이런 거 정리
+JDK(Java Development Kit)  
+  - JRE(Java Runtime Environment)
+  - JVM(Java virtual Machine) 가상 머신
+IDE(Intergrated Development Environment) 작업 공간
+  ex) Eclipse, Visual Studio, Android Studio 등
