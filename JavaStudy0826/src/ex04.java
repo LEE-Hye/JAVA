@@ -10,6 +10,7 @@ public class ex04 {
 		int hol = 0;
 		
 		while(true) {
+			// while -> 반복의 횟수가 명확히 정해지지 않은 경우
 			System.out.print("숫자를 입력해주세요 : ");
 			int num = sc.nextInt();
 			
