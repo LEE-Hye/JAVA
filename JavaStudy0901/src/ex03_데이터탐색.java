@@ -11,14 +11,17 @@ public class ex03_데이터탐색 {
 		System.out.print("이름 : ");
 		String name = sc.next();
 		
+		boolean isFind = false;
+		
 		for(int i = 0; i < team.length; i++) {
 			if(name.equals(team[i])) {
 				System.out.println(name + "님은 " + i + "번 인덱스에 있습니다.");
-			}
-			else {
-				System.out.println("머냐");
+				isFind = true;
 				break;
 			}
+		}
+		if(isFind == false) {
+			System.out.println(name + "없는 사람입니다.");
 		}
 
 		
