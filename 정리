@@ -7,3 +7,29 @@ JDK(Java Development Kit)
   - JVM(Java virtual Machine) 가상 머신
 IDE(Intergrated Development Environment) 작업 공간
   ex) Eclipse, Visual Studio, Android Studio 등
+--------------------------------------------------------------------------
+1) 환경구축
+    - JDK
+    - Eclipse
+2) 입출력
+    - 출력 : System.out.println(출력);
+          -> 숫자 + 숫자 = 숫자
+          -> 숫자 + 문자 = 문자
+    - 입력 : ① 도구 생성(SCanner sc = new Scanner(System.in))
+            ② sc.nextInt(), sc.next(); -> 도구 사용
+3) 변수 
+   : 값을 저장(기억)하는 메모리 공간
+   - 숫자 
+        -> 정수 - int
+        -> 실수 - double
+   - 문자
+        -> char, string(char[])
+   - 논리 
+        -> ★ boolean(true, false) 
+        - 대소문자 구분(아스키코드)
+          -> A - 65, B - 66 / a - 97, b - 98
+4) 연산자
+  - 결과값이 숫자(산술) : +, -, *, %(나머지), /(몫)
+  - 결과값이 논리(논리, 비교) : &&(논리곱), ||(논리합) / ==, !=, >=, <=
+  - 결과값이 없음
+5)
