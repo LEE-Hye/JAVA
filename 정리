@@ -1,6 +1,6 @@
 ------------------------------이클립스 설치-------------------------------------
-1. JDK 1.8 검색 -> 첫번째 것 접속 -> Java SE Development Kit 8u202 -> window x64 다운로드
-2. eclipse 검색 -> 첫번째 것 접속 -> Download Package -> 21년 9월 버전 -> Eclipse IDE for Enterprise Java and Web Developers 다운로드
+1. JDK 1.8 검색(Java Development Kit) -> 첫번째 것 접속(오라클 홈페이지) -> Java SE Development Kit 8u202 -> window x64 다운로드
+2. eclipse 검색(Tool) -> 첫번째 것 접속(이클립스 홈페이지) -> Download Package -> 21년 9월 버전 -> Eclipse IDE for Enterprise Java and Web Developers 다운로드
 --------------------------------------------------------------------------
 JDK(Java Development Kit)  
   - JRE(Java Runtime Environment)
