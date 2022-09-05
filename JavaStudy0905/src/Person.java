@@ -15,6 +15,7 @@ public class Person {
 	// 생성자 특징
 	// 1. 리턴 타입이 없음(void 자체도 없음)
 	// 2. 생성자 메소드 이름은 클래스 이름과 동일
+	// 3. 생성자는 new라는 키워드를 통해서만 호출할 수 있다.
 	public Person(String name, int age, String gender, int height) {
 		super();
 		this.name = name;
