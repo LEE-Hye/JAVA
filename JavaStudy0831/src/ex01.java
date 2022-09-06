@@ -13,6 +13,7 @@ public class ex01 {
 		// 배열 선언 1.
 		// new : 만들겠다! 생성하겠다!
 		// 타입[] 배열명 = new 타입[배열의 크기]
+		// 타입 배열명[] 이것도 가능하긴 한데 윗줄처럼 적는게 좋음
 		int[] numArray = new int[4];
 		// numArray[index]
 		// index => 0부터 시작! ~ 배열의 크기 -1
