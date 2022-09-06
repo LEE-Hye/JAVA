@@ -21,6 +21,12 @@ public class Main {
 		
 		System.out.println(foods);
 		System.out.println(names);
+		
+		// for-each문, 확장 for문
+		// - 배열에 특화된 for문
+		for(String temp : names) {
+			System.out.println(temp);
+		}
 	}
 
 }
