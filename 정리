@@ -1,9 +1,57 @@
 ------------------------------이클립스 설치-------------------------------------
-1. JDK 1.8 검색 -> 첫번째 것 접속 -> Java SE Development Kit 8u202 -> window x64 다운로드
-2. eclipse 검색 -> 첫번째 것 접속 -> Download Package -> 21년 9월 버전 -> Eclipse IDE for Enterprise Java and Web Developers 다운로드
+1. JDK 1.8 검색(Java Development Kit) -> 첫번째 것 접속(오라클 홈페이지) -> Java SE Development Kit 8u202 -> window x64 다운로드
+2. eclipse 검색(Tool) -> 첫번째 것 접속(이클립스 홈페이지) -> Download Package -> 21년 9월 버전 -> Eclipse IDE for Enterprise Java and Web Developers 다운로드
 --------------------------------------------------------------------------
 JDK(Java Development Kit)  
   - JRE(Java Runtime Environment)
   - JVM(Java virtual Machine) 가상 머신
 IDE(Intergrated Development Environment) 작업 공간
   ex) Eclipse, Visual Studio, Android Studio 등
+--------------------------------------------------------------------------
+1) 환경구축
+  - JDK
+  - Eclipse
+2) 입출력
+  - 출력 : System.out.println(출력);
+    -> 숫자 + 숫자 = 숫자
+    -> 숫자 + 문자 = 문자
+  - 입력 : ① 도구 생성(SCanner sc = new Scanner(System.in))
+          ② sc.nextInt(), sc.next(); -> 도구 사용
+3) 변수 
+  : 값을 저장(기억)하는 메모리 공간
+  - 숫자 
+    -> 정수 - int ex) int a = 10; (정수 타입인 a인 변수에 10을 대입한다)
+    -> 실수 - double
+  - 문자
+    -> char, string(char[])
+  - 논리 
+    -> ★ boolean(true, false) 
+    - 대소문자 구분(아스키코드)
+      -> A - 65, B - 66 / a - 97, b - 98
+  -> 생성 : 자료형을 붙인다
+  -> 사용 : 생성을 하지 않은 변수는 사용할 수 없다.
+4) 연산자
+  - 결과값이 숫자(산술) : +, -, *, %(나머지), /(몫)
+  - 결과값이 논리(논리, 비교) : &&(논리곱), ||(논리합) / ==(같냐?), !=, >=, <=
+  - 결과값이 없음(증감, 대입, 삼항) : a++, ++a / a = b(b를 a에 대입) / 조건 ? choice1(출력문 말고 값을 적어줌) : choice2(true면 1, false면 2)
+5) 조건문
+  - 비교(논리) 연산의 결과에 따라서 명령어를 제어하기 위해 사용(제어 = 조건문 + 반복문)
+  if(조건1){ -> 만약에 조건1이 참이면 실행1을 수행!
+    실행1;
+  }else if(조건2){ -> 그렇지 않고 만약에 조건2라면 실행2를 수행
+    실행2   
+  }else{  -> 위 조건이 참이 아니라면 실행2를 수행 
+    실행3;
+  };
+  - if문 안에 if문 적는 건 중첩if문
+
+6. 반복문
+  - 특정 조건을 만족하는 동안 해당 명령(반복할 명령(범위))을 수행 
+    ex) 30만원 수익이 날 때까지 반복 => 횟수 모를 때 while문 적합
+    ex) 하루에 10번 주문 받는다 => 횟수 알 때 for문(시작, 끝, 단계를 알 때) 적합
+      ex) 1부터 10까지 1씩 증가 / 10부터 100까지 5씩 증가 => 이런 경우는 for문을 써야 함
+  for(초기화 구문; 검사조건; 반복후 작업){
+    실행할 명령
+  };
+  -> 초기화 구문 -> 검사조건 -> 실행할 명령 -> 반복후 작업 -> 검사조건 -> 계속 반복
+  
