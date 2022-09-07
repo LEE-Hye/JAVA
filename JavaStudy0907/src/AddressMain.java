@@ -21,10 +21,15 @@ public class AddressMain {
 		
 		// 1. name(tel) 번지 수 : mail
 		
+		for(int i = 0; i < address.size(); i++) {
+			String name = address.get(i).getName();
+			int mail = address.get(i).getMail();
+			String tel = address.get(i).getTel();
+			
+			System.out.printf("%d. %s(%s) 번지수 : %s", i+1, name, tel, mail);
+			System.out.println();
+		}
 		
-		String name = address.get(0).getName();
-		int mail = address.get(0).getMail();
-		String tel = address.get(0).getTel();
 	}
 
 }

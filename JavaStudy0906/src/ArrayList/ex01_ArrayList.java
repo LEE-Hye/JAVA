@@ -61,20 +61,21 @@ public class ex01_ArrayList {
 	}
 
 }
-//<ArrayList>
-//1. 선언 및 생성
-//- ArrayList<데이터타입> 변수명 = new ArrayList<데이터타입>();
+// <ArrayList>
+// 가변 리스트
+// 1. 선언 및 생성
+// - ArrayList<데이터타입> 변수명 = new ArrayList<데이터타입>();
 //
-//2. 값 추가
-//- 변수명.add(값);
-//- 변수명.add(인덱스, 값);
+// 2. 값 추가
+// - 변수명.add(값);
+// - 변수명.add(인덱스, 값);
 //
-//3. 값 조회
-//- 변수명.get(인덱스);
+// 3. 값 조회
+// - 변수명.get(인덱스);
 //
-//4. 값 삭제
-//- 변수명.remove(인덱스);
-//- 변수명.clear();
+// 4. 값 삭제
+// - 변수명.remove(인덱스);
+// - 변수명.clear();
 //
-//5. ArrayList의 크기
+// 5. ArrayList의 크기
 //- 변수명.size()
