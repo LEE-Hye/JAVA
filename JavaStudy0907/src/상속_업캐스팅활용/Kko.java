@@ -1,6 +1,6 @@
 package »ó¼Ó_¾÷Ä³½ºÆÃÈ°¿ë;
 
-public class Kko {
+public class Kko extends Pockemon{
 
 	public void pick() {
 		System.out.println("²¿ºÎ±â »ÌÇû´Ù!");
