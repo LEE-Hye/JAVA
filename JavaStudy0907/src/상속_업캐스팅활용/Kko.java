@@ -1,0 +1,8 @@
+package »ó¼Ó_¾÷Ä³½ºÆÃÈ°¿ë;
+
+public class Kko {
+
+	public void pick() {
+		System.out.println("²¿ºÎ±â »ÌÇû´Ù!");
+	}
+}

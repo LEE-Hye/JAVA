@@ -29,7 +29,10 @@ public class Main {
 		 
 		// 2. 상속 관계에서 하위 클래스 객체는 상위 클래스 타입으로 형변환이 가능하다.
 		// => 업캐스팅
-		new FeaturePhone();
+		Phone p3 = new FeaturePhone();
+		// FeaturPhone p4 = new Phone();
+		// -> 안되는 이유가 더 추상적인 개념을 가지고 구체적인 개념이라고 할 수 없다.
+		// -> 상위 클래스 객체가 하위 클래스 타입으로 형변환이 불가능하다.
 		
 		
 		
