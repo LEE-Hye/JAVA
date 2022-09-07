@@ -6,6 +6,15 @@ public class Address {
 	private int mail;
 	private String tel;
 
+	
+	// »ý¼ºÀÚ
+	public Address(String name, int mail, String tel) {
+		this.name = name;
+		this.mail = mail;
+		this.tel = tel;
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -15,4 +24,5 @@ public class Address {
 	public String getTel() {
 		return tel;
 	}
+
 }
