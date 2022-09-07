@@ -4,9 +4,9 @@ public class Mp3 {
 	private String singer;
 	private String title;
 	private int playTime;
-	private String path; // À½¾Ç °æ·Î
+	private String path; // ìŒì•…ê²½ë¡œ
 	
-	// getter ¸Ş¼Òµå
+	// getter ë©”ì†Œë“œ
 	public String getSinger() {
 		return singer;
 	}
@@ -20,7 +20,7 @@ public class Mp3 {
 		return path;
 	}
 	
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	public Mp3(String singer, String title, int playTime, String path) {
 		this.singer = singer;
 		this.title = title;
