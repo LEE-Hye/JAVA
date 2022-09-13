@@ -1,0 +1,30 @@
+[MVC Pattern]
+- 프로그램의 유지보수가 편해지는 코드 구성을 위한 디자인 패턴
+그렇다면 왜? MVC Pattern이 생겨나게 됐을까?
+- 유지보수가 불편해서
+- 코드에서 반복이 일어나게 됩니다. 
+- 패턴에서 규칙성이 보이기 시작
+- M : Model
+- V : View
+- C : Controller
+
+[MVC Pattern 규칙]
+1. Model은 Controller와 View 의존X
+-> 즉, 모델 내부에 Controller / View 관련된 코드가 있으면 안됨
+2. View는 Model측에서만 의존 / Controller에는 의존 X
+-> View 내부에는 Model 코드가 들어가도 됨
+-> View 내부에는 Controller 코드는 안됨
+3. View가 Model로부터 데이터를 받을 때
+-> 사용자마다 다르게 보여주어야 하는 데이터(폰트나 프레임 등)만 받아야 함
+4. Controller는 Model과 View 의존 O
+-> Controller는 Model과 View 의 중재자 역할 수행
+5. View단계에서 Model로부터 데이터를 받을 때 반드시 Controller 단계를 거쳐야 함
+
+
+- Model : 프로그램의 Logic / 데이터 담당
+- View : Model 단계를 표현하기 위해 사용자 인터페이스(UI)를 제공
+- Controller : 중재자 역할
+   -> (View와 Model 사이에 위치해 사용자로부터 정보를 입력받아 Model을 통해 정보를 처리.
+   ->  이후에 처리한 정보를 View에게 전달하는 역할)
+
+
