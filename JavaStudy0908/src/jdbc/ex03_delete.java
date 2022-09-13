@@ -9,9 +9,19 @@ public class ex03_delete {
 
 	public static void main(String[] args) {
 		
+		
+		// JDBC 4단계
+		// 1. JDBC Driver 동적 로딩
+		// 2. 통로 열어주기(DB 연결)
+		// 3. SQL(쿼리)문 전송
+		// 4. 2번에서 열어준 통로를 닫아주는 단계
+		
+		
 		try {
+			// 1. JDBC Driver 동적 로딩
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
+			// 2. 통로 열어주기(DB 연결)
 			String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 			String id = "hr";
 			String pw = "hr";
@@ -24,7 +34,8 @@ public class ex03_delete {
 				System.out.println("연결 실패");
 			}
 			
-			String sql = "delete from member where age=20";
+			// 3. SQL(쿼리)문 전송
+			String sql = "delete from member where id = ?";
 			
 			PreparedStatement psmt = conn.prepareStatement(sql);
 			
@@ -36,6 +47,7 @@ public class ex03_delete {
 				System.out.println("update 실패");
 			}
 			
+			// 4. 2번에서 열어준 통로를 닫아주는 단계
 			if(psmt != null) {
 				psmt.close();
 			}
