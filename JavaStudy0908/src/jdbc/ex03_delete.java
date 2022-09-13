@@ -35,7 +35,7 @@ public class ex03_delete {
 			}
 			
 			// 3. SQL(쿼리)문 전송
-			String sql = "delete from member where id = ?";
+			String sql = "delete from member where id = 'hb'";
 			
 			PreparedStatement psmt = conn.prepareStatement(sql);
 			
@@ -48,6 +48,7 @@ public class ex03_delete {
 			}
 			
 			// 4. 2번에서 열어준 통로를 닫아주는 단계
+			// 열어줬던 순서 역순으로 담아주시면 됩니다.
 			if(psmt != null) {
 				psmt.close();
 			}

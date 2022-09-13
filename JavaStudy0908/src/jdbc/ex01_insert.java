@@ -69,3 +69,10 @@ public class ex01_insert {
 	}
 
 }
+
+// SQL문 실행 - SQL 실행 X
+// 1. Table 값 안 들어왔을 때 혹은 없는 값을 삭제하려고 할 때
+// -> Table 값 제대로 있는지 SQL Result 창 한번 더 확인
+
+// 2. DB Connection 상태 -> Disconnect 상태 였을 때
+// --> New oracle
