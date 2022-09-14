@@ -90,7 +90,7 @@ public class DAO {
 		}
 		return cnt;
 	}
-	
+
 	// Update
 	public int update(String id, String nick) {
 		// 입력받은 id가 일치하는 것을 찾아서 입력한 nick으로 변경
@@ -129,8 +129,7 @@ public class DAO {
 		}
 		return cnt;
 	}
-	
-	
+
 	// SelectOne
 	public MemberVO selectOne(String id) {
 		MemberVO vo = null;
@@ -163,7 +162,7 @@ public class DAO {
 		return vo;
 	}
 
-	// SelectAll	
+	// SelectAll
 	public ArrayList<MemberVO> select() {
 		ArrayList<MemberVO> list = new ArrayList<MemberVO>();
 		try {

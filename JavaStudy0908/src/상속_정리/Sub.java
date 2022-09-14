@@ -24,6 +24,6 @@ public class Sub extends Super {
 	public void coffee() {
 		// 오버라이딩 한 메소드다
 		System.out.println("환상의 커피 레시피");
-	}
+	} 
 	
 }
