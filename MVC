@@ -1,6 +1,6 @@
 [MVC Pattern]
 - 프로그램의 유지보수가 편해지는 코드 구성을 위한 디자인 패턴
-그렇다면 왜? MVC Pattern이 생겨나게 됐을까?
+그렇다면 왜? MVC Pattern이 생겨났을까?
 - 유지보수가 불편해서
 - 코드에서 반복이 일어나게 됩니다. 
 - 패턴에서 규칙성이 보이기 시작
@@ -9,16 +9,16 @@
 - C : Controller
 
 [MVC Pattern 규칙]
-1. Model은 Controller와 View 의존X
--> 즉, 모델 내부에 Controller / View 관련된 코드가 있으면 안됨
-2. View는 Model측에서만 의존 / Controller에는 의존 X
+1. Model은 Controller와 View 의존 X
+-> 즉, 모델 내부에 Controller / View 관련된 코드가 있으면 안 됨
+2. View는 Model 측에서만 의존 / Controller에는 의존 X
 -> View 내부에는 Model 코드가 들어가도 됨
 -> View 내부에는 Controller 코드는 안됨
 3. View가 Model로부터 데이터를 받을 때
 -> 사용자마다 다르게 보여주어야 하는 데이터(폰트나 프레임 등)만 받아야 함
 4. Controller는 Model과 View 의존 O
--> Controller는 Model과 View 의 중재자 역할 수행
-5. View단계에서 Model로부터 데이터를 받을 때 반드시 Controller 단계를 거쳐야 함
+-> Controller는 Model과 View의 중재자 역할 수행
+5. View 단계에서 Model로부터 데이터를 받을 때 반드시 Controller 단계를 거쳐야 함
 
 
 - Model : 프로그램의 Logic / 데이터 담당
@@ -28,3 +28,28 @@
    ->  이후에 처리한 정보를 View에게 전달하는 역할)
 
 
+[JDBC]에서 사용한 객체들
+1. connection 인터페이스
+- DB에서 사용하는 SQL 문장을 실행시키기 전에 우선 Connection 객체가 있어야 합니다.
+- 특정 SQL 문을 정의하고 실행시킬 수 있는 Statement 객체를 생성할 때 사용하는 게 Connection 객체
+
+2. preparedstatement 인터페이스
+1) 같은 질의문 중에 특정 값만 바꿔서 여러 번 실행할 때
+2) 많은 데이터를 다룬 관계로 질의문을 정리할 때
+3) 인수가 많아서 질의문을 정리해야 할 때 
+--> PreparedStatement 객체 사용시에 한번 분석되면 재사용이 용이
+
+--> Statement 객체 SQL 실행될 때 마다 서버에 분석
+* Statement 인터페이스
+- Connection 객체에 의해서 구현되는 일종의 메소드 집합을 정의
+Statement 객체 생성 --> Statement 객체의 executeQuery() 메소드 호출해서 SQL 질의 가능 --> Select 문 질의
+   --> 단순 질의문을 사용하면 좋음
+   
+
+3. ResultSet 인터페이스
+- SQL 문(Select 문) 사용할 때 성공했을 시 결과물을 ResultSet을 반환
+- Table 테이블(행/열)
+- 'Cursor(커서)' 개념이 존재
+- ResultSet에서 특정 행에 대한 참조를 할 수 있음
+- 커서는 제일 초반에 첫 번째 행의 직전을 가리키고 있음
+- next() 메소드는 커서를 다음 행으로 옮길 때 사용
